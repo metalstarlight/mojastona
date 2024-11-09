@@ -1,0 +1,7 @@
+SSH:
+ssh -p 2025 kimczyk@192.168.0.159
+Parol na glownego usera:  NBYTzf$5kH>xUe#
+mysql user parol:         !8gF#q9bZ@4
+
+
+docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiZmNmMDgyYjZhZDM2ZjcwNzc4NzkyMzYxYjUxMDdlOGEiLCJ0IjoiMGY5ODE2YjMtNDBkNi00NzJmLTgwNGMtZmZhYjc0NzEwMWUzIiwicyI6Ik5tWmtPR0psWVRBdE9EazBZaTAwTVRneExXRmtObUl0TWpBeVkyVXhNV05tTURrNCJ9

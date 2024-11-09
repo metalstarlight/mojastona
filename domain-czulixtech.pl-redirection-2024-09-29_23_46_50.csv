@@ -1,0 +1,4 @@
+;Domain;Type;Target
+A;czulixtech.pl;To a server (IPv4 - A);75.2.60.5
+A;www.czulixtech.pl;To a server (IPv4 - A);75.2.60.5
+CNAME;ftp.czulixtech.pl;To a domain (CNAME);czulixtech.pl

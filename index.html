@@ -3,7 +3,8 @@
 <html>
 
 <head>
-	
+
+		  
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SSZGN56L25"></script>
 	<script>
@@ -13,6 +14,65 @@
 
   	gtag('config', 'G-SSZGN56L25');
 	</script>
+	<script>
+	function consentGranted() {
+	localStorage.setItem('consent', true)
+		var cookieConsentBanner = $('#cookie-banner');
+		if ( cookieConsentBanner.length ) {
+			if ( Cookies.get('CUSTOM_COOKIE') != 'true' ) {
+				var acceptCookieButton= cookieConsentBanner.find('.cookie-buttons .accept-cookies');    
+				acceptCookieButton.on('click', function() {
+					Cookies.set( 'CUSTOM_COOKIE', 'true', { expires: 365 } );
+					cookieConsentBanner.remove();
+				});
+			};
+			};
+	};
+
+		function dismissCookieBanner() {
+		localStorage.setItem('consent', false)
+			var cookieConsentBanner = $('#cookie-banner');
+			var dismissCookieBanner= cookieConsentBanner.find('.cookie-buttons .dismiss-cookies');
+				dismissCookieBanner.on('click', function() {
+					cookieConsentBanner.remove();
+				});
+		};
+
+		document.getElementById('cookie-banner').hidden = localStorage.getItem('consent') != null
+
+	</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Cookie Consent Banner -->
+<script>
+  window.dataLayer = window.dataLayer || []; 
+  function gtag() {dataLayer.push(arguments);}
+      gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied' });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script> 
+
+<script>
+  window.dataLayer = window.dataLayer || []; 
+  function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'TAG_ID');
+</script>
+
+<script>
+  function consentGranted() { 
+      gtag('consent', 'update', { 'ad_storage': 'granted', 'analytics_storage': 'granted' });};
+</script>
+<script>
+  function dismissCookieBanner() { 
+      gtag('consent', 'update', { 'ad_storage': 'denied', 'analytics_storage': 'denied' });};
+</script>
+<!-- Cookie Consent Banner -->
+
+
+
 
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -79,7 +139,7 @@
 				<ul>
 					<li><a href="#intro">Ceny</a></li>
 					<li><a href="#work">Robota</a></li>
-					<!-- <li><a href="#about">About</a></li> -->
+					<li><a href="https://forum.czulixtech.pl">FORUM NAPRAWY ELEKTRONIKI LixFix</a></li>
 					<!-- <li><a href="#contact">Contact</a></li> -->
 					<!-- <li><a href="#elements">Elements</a"></li> -->
 				
